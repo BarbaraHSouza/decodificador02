@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Decodificador de textos</title>
+    <link rel="shortcut icon" type="imagem" href="./assets/icon_cripto.png">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__imagem" src="./assets/cabecalho.png" alt="imagem cabecalho">
+        <h1 class="cabecalho__titulo">Decodificador de textos</h1>
+    </header>
+
+    <main class="corpo">
+        <section class="corpo__principal">
+            <form>
+                <textarea id="input-text" style="resize: none;" type="input" name="text" class="corpo__principal__textarea" rows="20" cols="500" placeholder="Digite a mensagem"></textarea>
+            </form>
+        </section>
+
+        <section class="corpo__secundario">
+            <div id="nada" class="corpo__secundario__nada">
+                <img class="corpo__secundario__imagem" src="./assets/boneco.png" alt="boneco alura">
+                <div class="corpo__secundario__nada__texto">
+                    <p></p>
+                    <h2>Nenhuma mensagem foi encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>    
+            </div>
+            <div id="resultado" class="corpo__secundario__resultado">
+                <span id="texto__resultado">Mostrar resultado</span>
+                <button class="corpo__secundario__resultado__botao" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="rodape"> 
+        <div class="rodape__aviso"> 
+            <img class="rodape__aviso_imagem" src="./assets/alerta.png" alt="imagem alerta">
+            <p>Apenas letras minúsculas e sem acentos.</p>
+        </div>
+        <div class="rodape__botoes">
+            <button type="button" class="rodape__botoes__individuais" onclick="mostrarResultado()">Criptografar</button>
+            <button type="button" class="rodape__botoes__individuais" onclick="mostrarDescriptografado()">Descriptografar</button>
+        </div>
+
+        <p class="rodape__desenvolvido">&copy; Bárbara Helena - 2024.</p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
